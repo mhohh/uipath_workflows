@@ -1,0 +1,335 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="StateMachine" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="758,814" sap2010:WorkflowViewState.IdRef="StateMachine_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <StateMachine InitialState="{x:Reference __ReferenceID3}" DisplayName="StateMachine" sap:VirtualizedContainerService.HintSize="768,749" sap2010:WorkflowViewState.IdRef="StateMachine_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        <av:Point x:Key="ShapeLocation">270,2.5</av:Point>
+        <x:Double x:Key="StateContainerWidth">734</x:Double>
+        <x:Double x:Key="StateContainerHeight">713</x:Double>
+        <av:PointCollection x:Key="ConnectorLocation">270,47.5 173.3,47.5 173.3,149.5</av:PointCollection>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <State x:Name="__ReferenceID3" DisplayName="date" sap:VirtualizedContainerService.HintSize="380,652" sap2010:WorkflowViewState.IdRef="State_1">
+      <State.Entry>
+        <ui:InputDialog Label="{x:Null}" Options="{x:Null}" OptionsString="{x:Null}" DisplayName="date" sap:VirtualizedContainerService.HintSize="334,238" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Title="Enter a date of birth">
+          <ui:InputDialog.Result>
+            <OutArgument x:TypeArguments="x:Int32">[dateofbirth]</OutArgument>
+          </ui:InputDialog.Result>
+        </ui:InputDialog>
+      </State.Entry>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <av:Point x:Key="ShapeLocation">113,149.5</av:Point>
+          <av:Size x:Key="ShapeSize">134,61</av:Size>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <State.Transitions>
+        <Transition DisplayName="date is correct" sap:VirtualizedContainerService.HintSize="450,505" sap2010:WorkflowViewState.IdRef="Transition_2">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <av:PointCollection x:Key="ConnectorLocation">186.7,210.5 186.7,299.5</av:PointCollection>
+              <x:Int32 x:Key="SrcConnectionPointIndex">43</x:Int32>
+              <x:Int32 x:Key="DestConnectionPointIndex">42</x:Int32>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <Transition.Condition>
+            <mva:VisualBasicValue x:TypeArguments="x:Boolean" ExpressionText="(dateofbirth &gt; 0 And dateofbirth &lt; 32) And retrycount &lt; 3" />
+          </Transition.Condition>
+          <Transition.To>
+            <State x:Name="__ReferenceID2" DisplayName="month" sap:VirtualizedContainerService.HintSize="134,61" sap2010:WorkflowViewState.IdRef="State_2">
+              <State.Entry>
+                <ui:InputDialog Label="{x:Null}" Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="334,238" sap2010:WorkflowViewState.IdRef="InputDialog_2" IsPassword="False" Title="Enter month of birth">
+                  <ui:InputDialog.Result>
+                    <OutArgument x:TypeArguments="x:Int32">[monthofbirth]</OutArgument>
+                  </ui:InputDialog.Result>
+                </ui:InputDialog>
+              </State.Entry>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <av:Point x:Key="ShapeLocation">113,299.5</av:Point>
+                  <av:Size x:Key="ShapeSize">134,61</av:Size>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <State.Transitions>
+                <Transition DisplayName="Month is correct" sap:VirtualizedContainerService.HintSize="450,505" sap2010:WorkflowViewState.IdRef="Transition_1">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <av:PointCollection x:Key="ConnectorLocation">180,360.5 180,449.5</av:PointCollection>
+                      <x:Int32 x:Key="SrcConnectionPointIndex">39</x:Int32>
+                      <x:Int32 x:Key="DestConnectionPointIndex">38</x:Int32>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <Transition.Condition>
+                    <mva:VisualBasicValue x:TypeArguments="x:Boolean" ExpressionText="(monthofbirth &gt; 0 and monthofbirth &lt; 13) and retrycount &lt; 3" />
+                  </Transition.Condition>
+                  <Transition.To>
+                    <State x:Name="__ReferenceID0" DisplayName="Year" sap:VirtualizedContainerService.HintSize="134,61" sap2010:WorkflowViewState.IdRef="State_3">
+                      <State.Entry>
+                        <ui:InputDialog Label="{x:Null}" Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="334,238" sap2010:WorkflowViewState.IdRef="InputDialog_3" IsPassword="False" Title="Enter year of birth">
+                          <ui:InputDialog.Result>
+                            <OutArgument x:TypeArguments="x:Int32">[yearofbirth]</OutArgument>
+                          </ui:InputDialog.Result>
+                        </ui:InputDialog>
+                      </State.Entry>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <av:Point x:Key="ShapeLocation">113,449.5</av:Point>
+                          <av:Size x:Key="ShapeSize">134,61</av:Size>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <State.Transitions>
+                        <Transition DisplayName="Wrong year of birth" sap:VirtualizedContainerService.HintSize="450,505" sap2010:WorkflowViewState.IdRef="Transition_6">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <av:PointCollection x:Key="ConnectorLocation">247,492.2 277,492.2 277,419.5 220.2,419.5 220.2,449.5</av:PointCollection>
+                              <x:Int32 x:Key="SrcConnectionPointIndex">52</x:Int32>
+                              <x:Int32 x:Key="DestConnectionPointIndex">62</x:Int32>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <Transition.To>
+                            <x:Reference>__ReferenceID0</x:Reference>
+                          </Transition.To>
+                          <Transition.Action>
+                            <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_3">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="x:Int32">[retrycount]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="x:Int32">[retrycount + 1]</InArgument>
+                              </Assign.Value>
+                            </Assign>
+                          </Transition.Action>
+                          <Transition.Condition>
+                            <mva:VisualBasicValue x:TypeArguments="x:Boolean" ExpressionText="(yearofbirth &lt; 1900 and yearofbirth &gt; 2021) and retrycount &lt; 3" />
+                          </Transition.Condition>
+                        </Transition>
+                        <Transition DisplayName="Retry exceeded" sap2010:WorkflowViewState.IdRef="Transition_5">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <av:PointCollection x:Key="ConnectorLocation">240.3,510.5 240.3,540.5 573.2,540.5 573.2,220.5</av:PointCollection>
+                              <x:Int32 x:Key="SrcConnectionPointIndex">75</x:Int32>
+                              <x:Int32 x:Key="DestConnectionPointIndex">23</x:Int32>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <Transition.Condition>
+                            <mva:VisualBasicValue x:TypeArguments="x:Boolean" ExpressionText="retrycount &gt;= 3" />
+                          </Transition.Condition>
+                          <Transition.To>
+                            <State x:Name="__ReferenceID1" DisplayName="Final State" sap:VirtualizedContainerService.HintSize="134,61" sap2010:WorkflowViewState.IdRef="State_4" IsFinal="True">
+                              <State.Entry>
+                                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,91" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info" Message="[&quot;Process has ended&quot;]" />
+                              </State.Entry>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <av:Point x:Key="ShapeLocation">533,159.5</av:Point>
+                                  <av:Size x:Key="ShapeSize">134,61</av:Size>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </State>
+                          </Transition.To>
+                        </Transition>
+                        <Transition DisplayName="Year is correct" sap:VirtualizedContainerService.HintSize="450,505" sap2010:WorkflowViewState.IdRef="Transition_11">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <av:PointCollection x:Key="ConnectorLocation">186.7,510.5 186.7,540.5 153.3,540.5 153.3,609.5</av:PointCollection>
+                              <x:Int32 x:Key="SrcConnectionPointIndex">43</x:Int32>
+                              <x:Int32 x:Key="DestConnectionPointIndex">34</x:Int32>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <Transition.Condition>
+                            <mva:VisualBasicValue x:TypeArguments="x:Boolean" ExpressionText="(yearofbirth &gt; 1900 and yearofbirth &lt; 2022) and retrycount &lt;= 3" />
+                          </Transition.Condition>
+                          <Transition.To>
+                            <State x:Name="__ReferenceID4" DisplayName="Show Final Result" sap:VirtualizedContainerService.HintSize="134,61" sap2010:WorkflowViewState.IdRef="State_6">
+                              <State.Entry>
+                                <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="334,59" sap2010:WorkflowViewState.IdRef="MessageBox_4" Text="[&quot;Your birthday is on &quot; +dateofbirth.ToString + &quot;/&quot; + monthofbirth.ToString + &quot;/&quot; + yearofbirth.ToString]" />
+                              </State.Entry>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <av:Point x:Key="ShapeLocation">93,609.5</av:Point>
+                                  <av:Size x:Key="ShapeSize">134,61</av:Size>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <State.Transitions>
+                                <Transition DisplayName="Finish the process" sap2010:WorkflowViewState.IdRef="Transition_10">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <av:PointCollection x:Key="ConnectorLocation">227,661.35 633.5,661.35 633.5,220.5</av:PointCollection>
+                                      <x:Int32 x:Key="SrcConnectionPointIndex">64</x:Int32>
+                                      <x:Int32 x:Key="DestConnectionPointIndex">59</x:Int32>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <Transition.To>
+                                    <x:Reference>__ReferenceID1</x:Reference>
+                                  </Transition.To>
+                                </Transition>
+                              </State.Transitions>
+                            </State>
+                          </Transition.To>
+                        </Transition>
+                      </State.Transitions>
+                    </State>
+                  </Transition.To>
+                </Transition>
+                <Transition DisplayName="wrong month of birh" sap:VirtualizedContainerService.HintSize="450,505" sap2010:WorkflowViewState.IdRef="Transition_7">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <av:PointCollection x:Key="ConnectorLocation">247,330 273.5,330 273.5,269.5 213.5,269.5 213.5,299.5</av:PointCollection>
+                      <x:Int32 x:Key="SrcConnectionPointIndex">36</x:Int32>
+                      <x:Int32 x:Key="DestConnectionPointIndex">58</x:Int32>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <Transition.To>
+                    <x:Reference>__ReferenceID2</x:Reference>
+                  </Transition.To>
+                  <Transition.Action>
+                    <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_2">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:Int32">[retrycount]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:Int32">[retrycount + 1]</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                  </Transition.Action>
+                  <Transition.Condition>
+                    <mva:VisualBasicValue x:TypeArguments="x:Boolean" ExpressionText="(monthofbirth &lt; 1 or monthofbirth &gt; 12) and retrycount &lt; 3" />
+                  </Transition.Condition>
+                </Transition>
+                <Transition DisplayName="Retry exceeded" sap:VirtualizedContainerService.HintSize="450,505" sap2010:WorkflowViewState.IdRef="Transition_8">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <av:PointCollection x:Key="ConnectorLocation">233.6,360.5 233.6,390.5 546.4,390.5 546.4,220.5</av:PointCollection>
+                      <x:Int32 x:Key="SrcConnectionPointIndex">71</x:Int32>
+                      <x:Int32 x:Key="DestConnectionPointIndex">7</x:Int32>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <Transition.To>
+                    <x:Reference>__ReferenceID1</x:Reference>
+                  </Transition.To>
+                  <Transition.Condition>
+                    <mva:VisualBasicValue x:TypeArguments="x:Boolean" ExpressionText="retrycount &gt;= 3" />
+                  </Transition.Condition>
+                </Transition>
+              </State.Transitions>
+            </State>
+          </Transition.To>
+        </Transition>
+        <Transition DisplayName="wrong date of birth" sap:VirtualizedContainerService.HintSize="450,505" sap2010:WorkflowViewState.IdRef="Transition_3">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <av:PointCollection x:Key="ConnectorLocation">247,189.15 263.6,189.15 263.6,119.5 233.6,119.5 233.6,149.5</av:PointCollection>
+              <x:Int32 x:Key="SrcConnectionPointIndex">48</x:Int32>
+              <x:Int32 x:Key="DestConnectionPointIndex">70</x:Int32>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <Transition.To>
+            <x:Reference>__ReferenceID3</x:Reference>
+          </Transition.To>
+          <Transition.Action>
+            <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_1">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:Int32">[retrycount]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:Int32">[retrycount + 1]</InArgument>
+              </Assign.Value>
+            </Assign>
+          </Transition.Action>
+          <Transition.Condition>
+            <mva:VisualBasicValue x:TypeArguments="x:Boolean" ExpressionText="(dateofbirth &lt; 1 or dateofbirth &gt; 32) And retrycount &lt; 3" />
+          </Transition.Condition>
+        </Transition>
+        <Transition DisplayName="Retry exceeded" sap:VirtualizedContainerService.HintSize="450,505" sap2010:WorkflowViewState.IdRef="Transition_4">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <av:PointCollection x:Key="ConnectorLocation">240.3,210.5 240.3,223.05 503,223.05 503,193.05 533,193.05</av:PointCollection>
+              <x:Int32 x:Key="SrcConnectionPointIndex">75</x:Int32>
+              <x:Int32 x:Key="DestConnectionPointIndex">41</x:Int32>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <Transition.To>
+            <x:Reference>__ReferenceID1</x:Reference>
+          </Transition.To>
+          <Transition.Action>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,91" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Warn" Message="[&quot;Retry exceeded&quot;]" />
+          </Transition.Action>
+          <Transition.Condition>
+            <mva:VisualBasicValue x:TypeArguments="x:Boolean" ExpressionText="retrycount &gt;= 3" />
+          </Transition.Condition>
+        </Transition>
+      </State.Transitions>
+    </State>
+    <x:Reference>__ReferenceID2</x:Reference>
+    <x:Reference>__ReferenceID0</x:Reference>
+    <x:Reference>__ReferenceID1</x:Reference>
+    <x:Reference>__ReferenceID4</x:Reference>
+    <StateMachine.Variables>
+      <Variable x:TypeArguments="x:Int32" Name="dateofbirth" />
+      <Variable x:TypeArguments="x:Int32" Name="monthofbirth" />
+      <Variable x:TypeArguments="x:Int32" Name="yearofbirth" />
+      <Variable x:TypeArguments="x:Int32" Name="retrycount" />
+    </StateMachine.Variables>
+  </StateMachine>
+</Activity>
